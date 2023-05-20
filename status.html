@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Status</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./status-style.css" />
+    <script src="./animat.js" defer></script>
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header>
+      <div class="container flex aling-center header">
+        <div class="logo flex">
+          <a
+            href="./index.html"
+            class="logo flex aling-center"
+          >
+            <img
+              src="images/logo.svg"
+              alt="logo"
+            />Quizzy</a
+          >
+        </div>
+
+        <nav class="nav main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                class="main-nav-link link"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link logout"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i
+            class="fa-solid fa-bars icon-mobile-nav"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark icon-mobile-nav"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="status_section">
+          <h1>Learn new concepts each minute</h1>
+
+          <div class="card">
+            <div class="cardInfo">
+              <h3>Profile info</h3>
+            </div>
+            <button
+              class="btn btn-apply btn-apply-info cursor"
+              id="x"
+            >
+              Apply
+            </button>
+          </div>
+          <div class="card">
+            <div class="cardInfo">
+              <h3>English test</h3>
+            </div>
+            <button
+              class="btn btn-apply btn-apply-english cursor"
+            >
+              Apply
+            </button>
+          </div>
+          <div class="card">
+            <div class="cardInfo">
+              <h3>Technical test</h3>
+            </div>
+
+            <button
+              class="btn btn-apply btn-apply-technical cursor"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+        <button class="submit-all hidden btn">
+          SUBMIT
+        </button>
+      </div>
+    </section>
+
+    <section class="table hidden">
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Education</th>
+              <th>Birthday</th>
+              <th>English Result</th>
+              <th>Technical Result</th>
+            </tr>
+          </thead>
+          <tbody class="showTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer container flex">
+        <a href="" class="logo flex">
+          <img src="images/logo.svg" alt="logo" />Quizzy</a
+        >
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                src="images/dribbble.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/twitter.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/linkedin.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/instagram.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

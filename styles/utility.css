@@ -1,0 +1,261 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
+
+/* colors and fonts variables */
+:root {
+  --main-font: "Poppins", sans-serif;
+  /* --secondary-font: "Mochiy Pop One", sans-serif; */
+  --main-color: #01ff88;
+  --secondary-color: #007aff;
+  --text-color: #333;
+  --linear-color: linear-gradient(
+    90deg,
+    #1884ff 0%,
+    #62d4fd 100%
+  );
+}
+
+/* reset margin, padding and box sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* to set font-size with rem units 1rem = 10px */
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: var(--main-font);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*7. Remove built-in form typography styles*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border-radius: 5px;
+}
+
+p,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* public class */
+.btn {
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.flex {
+  display: flex;
+}
+
+.aling-center {
+  align-items: center;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1024px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container {
+    max-width: 1024px;
+  }
+  .Test .quiz {
+    max-width: 100% !important;
+  }
+  .container-login div {
+    /* background-size: auto; */
+    width: 60% !important;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 999;
+    padding-top: 8rem;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .container {
+    max-width: 480px;
+  }
+
+  .footer.flex {
+    flex-direction: column;
+  }
+
+  .Test .quiz {
+    max-width: 100% !important;
+  }
+
+  .container-login div {
+    background-size: auto;
+    width: 100% !important;
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  transition: opacity 1s, visibility 1s;
+  z-index: 1;
+}
+
+.loader--hidden {
+  opacity: 1;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 5px solid #dddddd;
+  border-top-color: var(--main-color);
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.active {
+  color: var(--main-color);
+  font-weight: 600;
+}

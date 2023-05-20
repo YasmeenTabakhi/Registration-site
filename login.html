@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="./js/singin.js" defer></script>
+
+    <link rel="stylesheet" href="./sign-style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <script src="./animat.js" defer></script>
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header>
+      <div class="container flex aling-center header">
+        <div class="logo flex">
+          <a
+            href="./index.html"
+            class="logo flex aling-center"
+          >
+            <img
+              src="images/logo.svg"
+              alt="logo"
+            />Quizzy</a
+          >
+        </div>
+
+        <nav class="nav main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                class="main-nav-link link"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="./signup.html" class="main-nav-link"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i
+            class="fa-solid fa-bars icon-mobile-nav"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark icon-mobile-nav"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="login" id="login">
+      <div class="container">
+        <div class="container-login">
+          <div>
+            <div class="text">
+              <h2>Hello!</h2>
+              <p>Welcome Back</p>
+            </div>
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email-log"
+            />
+            <span class="error-email"></span>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password-log"
+            />
+            <span class="error-password"></span>
+
+            <input
+              class="btn"
+              type="submit"
+              class="submit"
+              value="Log In"
+              id="submit-log"
+            />
+            <!-- <img src="images/Vector 5.svg" class="vector" alt="" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer container flex">
+        <a href="" class="logo flex">
+          <img src="images/logo.svg" alt="logo" />Quizzy</a
+        >
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                src="images/dribbble.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/twitter.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/linkedin.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/instagram.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

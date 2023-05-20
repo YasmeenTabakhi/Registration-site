@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <script src="./animat.js" defer></script>
+  </head>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
+  <body>
+    <div class="loader"></div>
+    <header>
+      <div class="container flex aling-center header">
+        <div class="logo flex">
+          <a
+            href="./index.html"
+            class="logo flex aling-center"
+          >
+            <img
+              src="images/logo.svg"
+              alt="logo"
+            />Quizzy</a
+          >
+        </div>
+
+        <nav class="nav main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                class="main-nav-link link active"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="./login.html" class="main-nav-link"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i
+            class="fa-solid fa-bars icon-mobile-nav"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark icon-mobile-nav"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="flex">
+            <div class="left col">
+              <h1>Learn new concepts each minute</h1>
+              <p>
+                We help you prepare for exams and quizes
+              </p>
+              <div class="flex gap-1">
+                <a href="./signup.html" class="btn"
+                  >Sign up</a
+                >
+                <a
+                  class="btn know-more flex gap-1 al aling-center"
+                >
+                  Know more
+                  <i class="fa-solid fa-sort-down"></i>
+                </a>
+              </div>
+            </div>
+            <div class="right col">
+              <img
+                src="images/undraw_questions_re_1fy7.svg"
+                alt="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="features" id="features"></section>
+    <section class="journey" id="journey"></section>
+
+    <footer>
+      <div class="footer container flex">
+        <a href="" class="logo flex">
+          <img src="images/logo.svg" alt="logo" />Quizzy</a
+        >
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                src="images/dribbble.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/twitter.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/linkedin.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="images/instagram.svg"
+                alt="social media icons"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
